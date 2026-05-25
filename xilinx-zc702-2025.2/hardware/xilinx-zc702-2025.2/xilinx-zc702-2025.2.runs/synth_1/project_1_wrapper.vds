@@ -1,0 +1,371 @@
+#-----------------------------------------------------------
+# Vivado v2025.2 (64-bit)
+# SW Build 6299465 on Fri Nov 14 12:34:56 MST 2025
+# IP Build 6300035 on Fri Nov 14 10:48:45 MST 2025
+# SharedData Build 6298862 on Thu Nov 13 04:50:51 MST 2025
+# Start of session at: Sat Nov 15 02:35:52 2025
+# Process ID         : 905481
+# Current directory  : /tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.runs/synth_1
+# Command line       : vivado -log project_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source project_1_wrapper.tcl
+# Log file           : /tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/project_1_wrapper.vds
+# Journal file       : /tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/vivado.jou
+# Running On         : xcossw04
+# Platform           : Ubuntu
+# Operating System   : Ubuntu 22.04 LTS
+# Processor Detail   : Intel(R) Xeon(R) Gold 6142 CPU @ 2.60GHz
+# CPU Frequency      : 3300.067 MHz
+# CPU Physical cores : 32
+# CPU Logical cores  : 64
+# Host memory        : 404320 MB
+# Swap memory        : 6806 MB
+# Total Virtual      : 411126 MB
+# Available Virtual  : 350224 MB
+#-----------------------------------------------------------
+Sourcing tcl script '/home/xbrbbot/.Xilinx/Vivado/Vivado_init.tcl'
+500 Beta devices matching pattern found, 500 enabled.
+enable_beta_device: Time (s): cpu = 00:00:43 ; elapsed = 00:00:22 . Memory (MB): peak = 1674.074 ; gain = 207.660 ; free physical = 163321 ; free virtual = 324767
+source project_1_wrapper.tcl -notrace
+create_project: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 1692.887 ; gain = 18.812 ; free physical = 181462 ; free virtual = 342903
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/proj/xbuilds/SWIP/2025.2_1114_2157/installs/lin64/2025.2/data/ip'.
+add_files: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1692.887 ; gain = 0.000 ; free physical = 184693 ; free virtual = 346135
+Command: synth_design -top project_1_wrapper -part xc7z020clg484-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 7 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 906208
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 2395.535 ; gain = 482.875 ; free physical = 197307 ; free virtual = 358794
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'project_1_wrapper' [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/sources_1/imports/hdl/project_1_wrapper.v:13]
+INFO: [Synth 8-6157] synthesizing module 'project_1' [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:13]
+INFO: [Synth 8-6157] synthesizing module 'project_1_axi_gpio_0_0' [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-905481-xcossw04/realtime/project_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_axi_gpio_0_0' (0#1) [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-905481-xcossw04/realtime/project_1_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-6157] synthesizing module 'project_1_proc_sys_reset_0_0' [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-905481-xcossw04/realtime/project_1_proc_sys_reset_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_proc_sys_reset_0_0' (0#1) [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-905481-xcossw04/realtime/project_1_proc_sys_reset_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'mb_reset' of module 'project_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:163]
+WARNING: [Synth 8-7071] port 'bus_struct_reset' of module 'project_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:163]
+WARNING: [Synth 8-7071] port 'peripheral_reset' of module 'project_1_proc_sys_reset_0_0' is unconnected for instance 'proc_sys_reset_0' [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:163]
+WARNING: [Synth 8-7023] instance 'proc_sys_reset_0' of module 'project_1_proc_sys_reset_0_0' has 10 connections declared, but only 7 given [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:163]
+INFO: [Synth 8-6157] synthesizing module 'project_1_smartcon_0_0' [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-905481-xcossw04/realtime/project_1_smartcon_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_smartcon_0_0' (0#1) [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-905481-xcossw04/realtime/project_1_smartcon_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'M00_AXI_awprot' of module 'project_1_smartcon_0_0' is unconnected for instance 'smartcon_0' [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:171]
+WARNING: [Synth 8-7071] port 'M00_AXI_arprot' of module 'project_1_smartcon_0_0' is unconnected for instance 'smartcon_0' [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:171]
+WARNING: [Synth 8-7023] instance 'smartcon_0' of module 'project_1_smartcon_0_0' has 59 connections declared, but only 57 given [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:171]
+INFO: [Synth 8-6157] synthesizing module 'project_1_zynq_7000_0_0' [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-905481-xcossw04/realtime/project_1_zynq_7000_0_0_stub.v:6]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_zynq_7000_0_0' (0#1) [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/.Xil/Vivado-905481-xcossw04/realtime/project_1_zynq_7000_0_0_stub.v:6]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE0_OUT' of module 'project_1_zynq_7000_0_0' is unconnected for instance 'zynq_7000_0' [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:229]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE1_OUT' of module 'project_1_zynq_7000_0_0' is unconnected for instance 'zynq_7000_0' [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:229]
+WARNING: [Synth 8-7071] port 'TTC0_WAVE2_OUT' of module 'project_1_zynq_7000_0_0' is unconnected for instance 'zynq_7000_0' [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:229]
+WARNING: [Synth 8-7071] port 'USB0_PORT_INDCTL' of module 'project_1_zynq_7000_0_0' is unconnected for instance 'zynq_7000_0' [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:229]
+WARNING: [Synth 8-7071] port 'USB0_VBUS_PWRSELECT' of module 'project_1_zynq_7000_0_0' is unconnected for instance 'zynq_7000_0' [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:229]
+WARNING: [Synth 8-7023] instance 'zynq_7000_0' of module 'project_1_zynq_7000_0_0' has 68 connections declared, but only 63 given [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:229]
+INFO: [Synth 8-6155] done synthesizing module 'project_1' (0#1) [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/synth/project_1.v:13]
+INFO: [Synth 8-6155] done synthesizing module 'project_1_wrapper' (0#1) [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/sources_1/imports/hdl/project_1_wrapper.v:13]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2494.504 ; gain = 581.844 ; free physical = 197062 ; free virtual = 358522
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2500.441 ; gain = 587.781 ; free physical = 197670 ; free virtual = 359130
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2500.441 ; gain = 587.781 ; free physical = 197670 ; free virtual = 359130
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2500.441 ; gain = 0.000 ; free physical = 197720 ; free virtual = 359180
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_zynq_7000_0_0/project_1_zynq_7000_0_0/project_1_zynq_7000_0_0_in_context.xdc] for cell 'project_1_i/zynq_7000_0'
+Finished Parsing XDC File [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_zynq_7000_0_0/project_1_zynq_7000_0_0/project_1_zynq_7000_0_0_in_context.xdc] for cell 'project_1_i/zynq_7000_0'
+Parsing XDC File [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_axi_gpio_0_0/project_1_axi_gpio_0_0/project_1_axi_gpio_0_0_in_context.xdc] for cell 'project_1_i/axi_gpio_0'
+Finished Parsing XDC File [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_axi_gpio_0_0/project_1_axi_gpio_0_0/project_1_axi_gpio_0_0_in_context.xdc] for cell 'project_1_i/axi_gpio_0'
+Parsing XDC File [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_0_0/project_1_proc_sys_reset_0_0/project_1_proc_sys_reset_0_0_in_context.xdc] for cell 'project_1_i/proc_sys_reset_0'
+Finished Parsing XDC File [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_proc_sys_reset_0_0/project_1_proc_sys_reset_0_0/project_1_proc_sys_reset_0_0_in_context.xdc] for cell 'project_1_i/proc_sys_reset_0'
+Parsing XDC File [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_smartcon_0_0/project_1_smartcon_0_0/project_1_smartcon_0_0_in_context.xdc] for cell 'project_1_i/smartcon_0'
+Finished Parsing XDC File [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.gen/sources_1/bd/project_1/ip/project_1_smartcon_0_0/project_1_smartcon_0_0/project_1_smartcon_0_0_in_context.xdc] for cell 'project_1_i/smartcon_0'
+Parsing XDC File [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/default.xdc]
+Finished Parsing XDC File [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/default.xdc]
+Parsing XDC File [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc]
+WARNING: [Vivado 12-508] No pins matched 'PS7_i/FCLKCLK[0]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:21]
+WARNING: [Vivado 12-584] No ports matched 'MIO[53]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:31]
+WARNING: [Vivado 12-584] No ports matched 'MIO[53]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:32]
+WARNING: [Vivado 12-584] No ports matched 'MIO[53]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:33]
+WARNING: [Vivado 12-584] No ports matched 'MIO[53]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:34]
+WARNING: [Vivado 12-584] No ports matched 'MIO[53]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:35]
+WARNING: [Vivado 12-584] No ports matched 'MIO[52]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:37]
+WARNING: [Vivado 12-584] No ports matched 'MIO[52]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:38]
+WARNING: [Vivado 12-584] No ports matched 'MIO[52]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:39]
+WARNING: [Vivado 12-584] No ports matched 'MIO[52]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:40]
+WARNING: [Vivado 12-584] No ports matched 'MIO[52]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:41]
+WARNING: [Vivado 12-584] No ports matched 'MIO[51]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:43]
+WARNING: [Vivado 12-584] No ports matched 'MIO[51]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:44]
+WARNING: [Vivado 12-584] No ports matched 'MIO[51]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:45]
+WARNING: [Vivado 12-584] No ports matched 'MIO[51]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:46]
+WARNING: [Vivado 12-584] No ports matched 'MIO[51]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:47]
+WARNING: [Vivado 12-584] No ports matched 'MIO[51]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:48]
+WARNING: [Vivado 12-584] No ports matched 'MIO[50]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:50]
+WARNING: [Vivado 12-584] No ports matched 'MIO[50]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:51]
+WARNING: [Vivado 12-584] No ports matched 'MIO[50]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:52]
+WARNING: [Vivado 12-584] No ports matched 'MIO[50]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:53]
+WARNING: [Vivado 12-584] No ports matched 'MIO[50]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:54]
+WARNING: [Vivado 12-584] No ports matched 'MIO[50]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:55]
+WARNING: [Vivado 12-584] No ports matched 'MIO[49]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:57]
+WARNING: [Vivado 12-584] No ports matched 'MIO[49]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:58]
+WARNING: [Vivado 12-584] No ports matched 'MIO[49]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:59]
+WARNING: [Vivado 12-584] No ports matched 'MIO[49]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:60]
+WARNING: [Vivado 12-584] No ports matched 'MIO[49]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:61]
+WARNING: [Vivado 12-584] No ports matched 'MIO[48]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:63]
+WARNING: [Vivado 12-584] No ports matched 'MIO[48]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:64]
+WARNING: [Vivado 12-584] No ports matched 'MIO[48]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:65]
+WARNING: [Vivado 12-584] No ports matched 'MIO[48]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:66]
+WARNING: [Vivado 12-584] No ports matched 'MIO[48]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:67]
+WARNING: [Vivado 12-584] No ports matched 'MIO[47]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:69]
+WARNING: [Vivado 12-584] No ports matched 'MIO[47]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:70]
+WARNING: [Vivado 12-584] No ports matched 'MIO[47]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:71]
+WARNING: [Vivado 12-584] No ports matched 'MIO[47]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:72]
+WARNING: [Vivado 12-584] No ports matched 'MIO[47]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:73]
+WARNING: [Vivado 12-584] No ports matched 'MIO[47]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:74]
+WARNING: [Vivado 12-584] No ports matched 'MIO[46]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:76]
+WARNING: [Vivado 12-584] No ports matched 'MIO[46]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:77]
+WARNING: [Vivado 12-584] No ports matched 'MIO[46]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:78]
+WARNING: [Vivado 12-584] No ports matched 'MIO[46]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:79]
+WARNING: [Vivado 12-584] No ports matched 'MIO[46]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:80]
+WARNING: [Vivado 12-584] No ports matched 'MIO[46]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:81]
+WARNING: [Vivado 12-584] No ports matched 'MIO[45]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:83]
+WARNING: [Vivado 12-584] No ports matched 'MIO[45]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:84]
+WARNING: [Vivado 12-584] No ports matched 'MIO[45]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:85]
+WARNING: [Vivado 12-584] No ports matched 'MIO[45]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:86]
+WARNING: [Vivado 12-584] No ports matched 'MIO[45]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:87]
+WARNING: [Vivado 12-584] No ports matched 'MIO[44]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:89]
+WARNING: [Vivado 12-584] No ports matched 'MIO[44]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:90]
+WARNING: [Vivado 12-584] No ports matched 'MIO[44]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:91]
+WARNING: [Vivado 12-584] No ports matched 'MIO[44]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:92]
+WARNING: [Vivado 12-584] No ports matched 'MIO[44]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:93]
+WARNING: [Vivado 12-584] No ports matched 'MIO[43]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:95]
+WARNING: [Vivado 12-584] No ports matched 'MIO[43]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:96]
+WARNING: [Vivado 12-584] No ports matched 'MIO[43]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:97]
+WARNING: [Vivado 12-584] No ports matched 'MIO[43]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:98]
+WARNING: [Vivado 12-584] No ports matched 'MIO[43]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:99]
+WARNING: [Vivado 12-584] No ports matched 'MIO[42]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:101]
+WARNING: [Vivado 12-584] No ports matched 'MIO[42]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:102]
+WARNING: [Vivado 12-584] No ports matched 'MIO[42]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:103]
+WARNING: [Vivado 12-584] No ports matched 'MIO[42]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:104]
+WARNING: [Vivado 12-584] No ports matched 'MIO[42]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:105]
+WARNING: [Vivado 12-584] No ports matched 'MIO[41]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:107]
+WARNING: [Vivado 12-584] No ports matched 'MIO[41]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:108]
+WARNING: [Vivado 12-584] No ports matched 'MIO[41]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:109]
+WARNING: [Vivado 12-584] No ports matched 'MIO[41]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:110]
+WARNING: [Vivado 12-584] No ports matched 'MIO[41]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:111]
+WARNING: [Vivado 12-584] No ports matched 'MIO[40]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:113]
+WARNING: [Vivado 12-584] No ports matched 'MIO[40]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:114]
+WARNING: [Vivado 12-584] No ports matched 'MIO[40]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:115]
+WARNING: [Vivado 12-584] No ports matched 'MIO[40]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:116]
+WARNING: [Vivado 12-584] No ports matched 'MIO[40]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:117]
+WARNING: [Vivado 12-584] No ports matched 'MIO[39]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:119]
+WARNING: [Vivado 12-584] No ports matched 'MIO[39]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:120]
+WARNING: [Vivado 12-584] No ports matched 'MIO[39]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:121]
+WARNING: [Vivado 12-584] No ports matched 'MIO[39]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:122]
+WARNING: [Vivado 12-584] No ports matched 'MIO[39]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:123]
+WARNING: [Vivado 12-584] No ports matched 'MIO[38]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:125]
+WARNING: [Vivado 12-584] No ports matched 'MIO[38]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:126]
+WARNING: [Vivado 12-584] No ports matched 'MIO[38]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:127]
+WARNING: [Vivado 12-584] No ports matched 'MIO[38]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:128]
+WARNING: [Vivado 12-584] No ports matched 'MIO[38]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:129]
+WARNING: [Vivado 12-584] No ports matched 'MIO[37]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:131]
+WARNING: [Vivado 12-584] No ports matched 'MIO[37]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:132]
+WARNING: [Vivado 12-584] No ports matched 'MIO[37]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:133]
+WARNING: [Vivado 12-584] No ports matched 'MIO[37]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:134]
+WARNING: [Vivado 12-584] No ports matched 'MIO[37]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:135]
+WARNING: [Vivado 12-584] No ports matched 'MIO[36]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:137]
+WARNING: [Vivado 12-584] No ports matched 'MIO[36]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:138]
+WARNING: [Vivado 12-584] No ports matched 'MIO[36]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:139]
+WARNING: [Vivado 12-584] No ports matched 'MIO[36]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:140]
+WARNING: [Vivado 12-584] No ports matched 'MIO[36]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:141]
+WARNING: [Vivado 12-584] No ports matched 'MIO[35]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:143]
+WARNING: [Vivado 12-584] No ports matched 'MIO[35]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:144]
+WARNING: [Vivado 12-584] No ports matched 'MIO[35]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:145]
+WARNING: [Vivado 12-584] No ports matched 'MIO[35]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:146]
+WARNING: [Vivado 12-584] No ports matched 'MIO[35]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:147]
+WARNING: [Vivado 12-584] No ports matched 'MIO[34]'. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:149]
+INFO: [Common 17-14] Message 'Vivado 12-584' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings. [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc:149]
+Finished Parsing XDC File [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc]
+WARNING: [Project 1-498] One or more constraints failed evaluation while reading constraint file [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc] and the design contains unresolved black boxes. These constraints will be read post-synthesis (as long as their source constraint file is marked as used_in_implementation) and should be applied correctly then. You should review the constraints listed in the file [.Xil/project_1_wrapper_propImpl.xdc] and check the run log file to verify that these constraints were correctly applied.
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/zc702.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/project_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/project_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/pl_zc702.xdc]
+Finished Parsing XDC File [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/pl_zc702.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.srcs/constrs_1/imports/xdc/pl_zc702.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/project_1_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/project_1_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/dont_touch.xdc]
+Finished Parsing XDC File [/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2508.074 ; gain = 0.000 ; free physical = 197138 ; free virtual = 358599
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2508.109 ; gain = 0.000 ; free physical = 197096 ; free virtual = 358561
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 2508.109 ; gain = 595.449 ; free physical = 196448 ; free virtual = 357918
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:36 ; elapsed = 00:00:36 . Memory (MB): peak = 2508.109 ; gain = 595.449 ; free physical = 196448 ; free virtual = 357917
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 2508.109 ; gain = 595.449 ; free physical = 196389 ; free virtual = 357859
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 2508.109 ; gain = 595.449 ; free physical = 196389 ; free virtual = 357860
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:41 ; elapsed = 00:00:42 . Memory (MB): peak = 2508.109 ; gain = 595.449 ; free physical = 196275 ; free virtual = 357750
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2604.074 ; gain = 691.414 ; free physical = 196684 ; free virtual = 358161
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2604.074 ; gain = 691.414 ; free physical = 196684 ; free virtual = 358161
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:55 ; elapsed = 00:00:56 . Memory (MB): peak = 2614.090 ; gain = 701.430 ; free physical = 196675 ; free virtual = 358152
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 2800.902 ; gain = 888.242 ; free physical = 196505 ; free virtual = 357982
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 2800.902 ; gain = 888.242 ; free physical = 196505 ; free virtual = 357982
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 2800.902 ; gain = 888.242 ; free physical = 196505 ; free virtual = 357982
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 2800.902 ; gain = 888.242 ; free physical = 196505 ; free virtual = 357982
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 2800.902 ; gain = 888.242 ; free physical = 196505 ; free virtual = 357982
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 2800.902 ; gain = 888.242 ; free physical = 196505 ; free virtual = 357982
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++------+-----------------------------+----------+
+|      |BlackBox name                |Instances |
++------+-----------------------------+----------+
+|1     |project_1_axi_gpio_0_0       |         1|
+|2     |project_1_proc_sys_reset_0_0 |         1|
+|3     |project_1_smartcon_0_0       |         1|
+|4     |project_1_zynq_7000_0_0      |         1|
++------+-----------------------------+----------+
+
+Report Cell Usage: 
++------+---------------------------+------+
+|      |Cell                       |Count |
++------+---------------------------+------+
+|1     |project_1_axi_gpio_0       |     1|
+|2     |project_1_proc_sys_reset_0 |     1|
+|3     |project_1_smartcon_0       |     1|
+|4     |project_1_zynq_7000_0      |     1|
+|5     |OBUF                       |     4|
++------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:08 ; elapsed = 00:01:10 . Memory (MB): peak = 2800.902 ; gain = 888.242 ; free physical = 196505 ; free virtual = 357982
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 0 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:03 ; elapsed = 00:01:04 . Memory (MB): peak = 2800.902 ; gain = 880.574 ; free physical = 196505 ; free virtual = 357982
+Synthesis Optimization Complete : Time (s): cpu = 00:01:09 ; elapsed = 00:01:10 . Memory (MB): peak = 2800.910 ; gain = 888.242 ; free physical = 196505 ; free virtual = 357982
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2800.910 ; gain = 0.000 ; free physical = 196671 ; free virtual = 358148
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2800.910 ; gain = 0.000 ; free physical = 196671 ; free virtual = 358148
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Synth Design complete | Checksum: 94f5ba
+INFO: [Common 17-83] Releasing license: Synthesis
+30 Infos, 115 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:25 . Memory (MB): peak = 2800.938 ; gain = 1108.051 ; free physical = 196672 ; free virtual = 358149
+INFO: [Common 17-2834] synth_design peak Physical Memory [PSS] (MB): overall = 1870.407; main = 1770.737; forked = 204.455
+INFO: [Common 17-2834] synth_design peak Virtual Memory [VSS] (MB): overall = 3654.801; main = 2800.906; forked = 974.707
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2800.938 ; gain = 0.000 ; free physical = 196671 ; free virtual = 358148
+INFO: [Common 17-1381] The checkpoint '/tmp/tmp.vsB2ccuvX3/temp/hwflow/hwflow_project_1/project_1.runs/synth_1/project_1_wrapper.dcp' has been generated.
+INFO: [Vivado 12-24828] Executing command : report_utilization -file project_1_wrapper_utilization_synth.rpt -pb project_1_wrapper_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Sat Nov 15 02:38:11 2025...

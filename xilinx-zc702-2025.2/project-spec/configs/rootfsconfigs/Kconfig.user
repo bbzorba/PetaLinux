@@ -1,0 +1,18 @@
+menu "user packages " 
+config debug-tweaks  
+	 bool "debug-tweaks"
+	 help
+	
+config gpio-demo  
+	 bool "gpio-demo"
+	 help
+	
+config mydriver  
+	 bool "mydriver"
+	 help
+	
+config peekpoke  
+	 bool "peekpoke"
+	 help
+	
+endmenu

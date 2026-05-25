@@ -1,0 +1,11 @@
+[Unit]
+Description=My Init Script
+After=network.target
+
+[Service]
+ExecStart=/usr/bin/myinit.sh
+Type=oneshot
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

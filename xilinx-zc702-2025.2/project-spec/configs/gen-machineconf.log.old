@@ -1,31 +1,38 @@
-2026-05-25 00:51:57,769 - [INFO] Getting Platform info from HW file
-2026-05-25 00:51:57,769 - [DEBUG] Using the soc_family specified by user:zynq
-2026-05-25 00:51:57,770 - [DEBUG] LOPPER_DTC_FLAGS="-b 0 -@" /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/sysroots/x86_64-petalinux-linux/usr/bin/lopper -O /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs -f --enhanced   -i /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/sysroots/x86_64-petalinux-linux/usr/lib/python3.12/site-packages/lopper/lops/lop-machine-name.dts /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/hw-description/system-top.dts 
-2026-05-25 00:51:58,542 - [DEBUG] 
+2026-05-25 23:33:00,716 - [INFO] Getting Platform info from HW file
+2026-05-25 23:33:00,716 - [DEBUG] Using the soc_family specified by user:zynq
+2026-05-25 23:33:00,717 - [DEBUG] LOPPER_DTC_FLAGS="-b 0 -@" /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/sysroots/x86_64-petalinux-linux/usr/bin/lopper -O /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs -f --enhanced   -i /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/sysroots/x86_64-petalinux-linux/usr/lib/python3.12/site-packages/lopper/lops/lop-machine-name.dts /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/hw-description/system-top.dts 
+2026-05-25 23:33:01,528 - [DEBUG] 
 xlnx-zynq-zc702 7z020 Zynq ZC702 Development Board
 
 
 
-2026-05-25 00:51:58,542 - [DEBUG] LOPPER_DTC_FLAGS="-b 0 -@" /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/sysroots/x86_64-petalinux-linux/usr/bin/lopper -O /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs -f --enhanced   -i /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/sysroots/x86_64-petalinux-linux/usr/lib/python3.12/site-packages/lopper/lops/lop-xilinx-id-cpus.dts /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/hw-description/system-top.dts 
-2026-05-25 00:51:59,479 - [DEBUG] 
+2026-05-25 23:33:01,529 - [DEBUG] LOPPER_DTC_FLAGS="-b 0 -@" /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/sysroots/x86_64-petalinux-linux/usr/bin/lopper -O /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs -f --enhanced   -i /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/sysroots/x86_64-petalinux-linux/usr/lib/python3.12/site-packages/lopper/lops/lop-xilinx-id-cpus.dts /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/hw-description/system-top.dts 
+2026-05-25 23:33:02,504 - [DEBUG] 
 # global core_number no-domain cpu_name
 arm,cortex-a9 0 None ps7_cortexa9_0 None
 arm,cortex-a9 1 None ps7_cortexa9_1 None
 
 
 
-2026-05-25 00:51:59,487 - [DEBUG] Hardware Configuration:
-2026-05-25 00:51:59,487 - [DEBUG] MODEL       = "Zynq ZC702 Development Board"
-2026-05-25 00:51:59,487 - [DEBUG] MACHINE     = "xlnx-zynq-zc702"
-2026-05-25 00:51:59,487 - [DEBUG] DEVICE_ID   = "7z020"
-2026-05-25 00:51:59,487 - [DEBUG] SOC_FAMILY  = "zynq"
-2026-05-25 00:51:59,487 - [DEBUG] SOC_VARIANT = ""
-2026-05-25 00:51:59,487 - [DEBUG] CPUs:
-2026-05-25 00:51:59,487 - [DEBUG] 	= ps7_cortexa9_0 arm cortex-a9 0
-2026-05-25 00:51:59,487 - [DEBUG] 	= ps7_cortexa9_1 arm cortex-a9 1
-2026-05-25 00:51:59,488 - [INFO] Silentconfig project
-2026-05-25 00:51:59,488 - [DEBUG] Running CMD: yes "" | env KCONFIG_CONFIG=/home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs/config conf /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs/configs/Kconfig
-2026-05-25 00:51:59,491 - [DEBUG] *
+2026-05-25 23:33:02,507 - [INFO] Generating Kconfig for the project
+2026-05-25 23:33:02,508 - [DEBUG] LOPPER_DTC_FLAGS="-b 0 -@" /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/sysroots/x86_64-petalinux-linux/usr/bin/lopper -O /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs  /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/hw-description/system-top.dts -- petalinuxconfig_xlnx ps7_cortexa9_0 /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/components/yocto/layers/meta-xilinx/meta-xilinx-core/gen-machine-conf/gen-machine-scripts/data/sdt_ipinfo.yaml
+2026-05-25 23:33:03,122 - [DEBUG] 
+
+
+
+2026-05-25 23:33:03,122 - [DEBUG] Generating System HW file
+2026-05-25 23:33:03,166 - [DEBUG] Hardware Configuration:
+2026-05-25 23:33:03,166 - [DEBUG] MODEL       = "Zynq ZC702 Development Board"
+2026-05-25 23:33:03,166 - [DEBUG] MACHINE     = "xlnx-zynq-zc702"
+2026-05-25 23:33:03,166 - [DEBUG] DEVICE_ID   = "7z020"
+2026-05-25 23:33:03,166 - [DEBUG] SOC_FAMILY  = "zynq"
+2026-05-25 23:33:03,166 - [DEBUG] SOC_VARIANT = ""
+2026-05-25 23:33:03,166 - [DEBUG] CPUs:
+2026-05-25 23:33:03,166 - [DEBUG] 	= ps7_cortexa9_0 arm cortex-a9 0
+2026-05-25 23:33:03,166 - [DEBUG] 	= ps7_cortexa9_1 arm cortex-a9 1
+2026-05-25 23:33:03,167 - [INFO] Silentconfig project
+2026-05-25 23:33:03,167 - [DEBUG] Running CMD: yes "" | env KCONFIG_CONFIG=/home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs/config conf /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs/configs/Kconfig
+2026-05-25 23:33:03,170 - [DEBUG] *
 * PetaLinux System Configuration
 *
 ZYNQ Configuration (SYSTEM_ZYNQ) [Y/?] y
@@ -248,9 +255,15 @@ user layer 0 (USER_LAYER_0) []
 #
 # configuration written to /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs/config
 #
-2026-05-25 00:51:59,531 - [INFO] Silentconfig rootfs
-2026-05-25 00:51:59,531 - [DEBUG] Running CMD: yes "" | env KCONFIG_CONFIG=/home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs/rootfs_config conf /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs/rootfsconfigs/Kconfig
-2026-05-25 00:51:59,539 - [DEBUG] *
+2026-05-25 23:33:03,210 - [INFO] Generating kconfig for rootfs
+2026-05-25 23:33:03,210 - [DEBUG] python3 /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/components/yocto/layers/meta-xilinx/meta-xilinx-core/gen-machine-conf/gen-machine-scripts/rootfsconfigs/rootfs_config.py --generate_kconfig /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/meta-user/conf/user-rootfsconfig /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs/rootfsconfigs
+2026-05-25 23:33:03,244 - [DEBUG] 
+
+
+
+2026-05-25 23:33:03,244 - [INFO] Silentconfig rootfs
+2026-05-25 23:33:03,244 - [DEBUG] Running CMD: yes "" | env KCONFIG_CONFIG=/home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs/rootfs_config conf /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs/rootfsconfigs/Kconfig
+2026-05-25 23:33:03,252 - [DEBUG] *
 * Configuration
 *
 *
@@ -3550,5 +3563,43 @@ Add Users to Sudo users (ADD_USERS_TO_SUDOERS) [petalinux]
 #
 # configuration written to /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs/rootfs_config
 #
-2026-05-25 00:51:59,545 - [INFO] Generating configuration files
-2026-05-25 00:51:59,559 - [DEBUG] Shutting down bitbake
+2026-05-25 23:33:03,258 - [INFO] Generating configuration files
+2026-05-25 23:33:03,259 - [INFO] Generating cortex-a9 Linux configuration [ None ]
+2026-05-25 23:33:03,259 - [DEBUG] No domain for cpu ps7_cortexa9_0 in any domain files
+2026-05-25 23:33:03,259 - [DEBUG] No pl-overlay is enabled for cortex-a9 Linux dts file: /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/hw-description/system-top.dts
+2026-05-25 23:33:03,259 - [DEBUG] LOPPER_DTC_FLAGS="-b 0 -@" /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/sysroots/x86_64-petalinux-linux/usr/bin/lopper --enhanced -O /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs -f  /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/hw-description/system-top.dts /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/components/plnx_workspace/device-tree/cortexa9-linux.dts -- gen_domain_dts ps7_cortexa9_0 linux_dt
+2026-05-25 23:33:04,474 - [DEBUG] 
+
+
+
+2026-05-25 23:33:04,474 - [INFO] Generating cortex-a9 baremetal configuration for FSBL
+2026-05-25 23:33:04,475 - [DEBUG] No domain for cpu ps7_cortexa9_0 in any domain files
+2026-05-25 23:33:04,475 - [DEBUG] LOPPER_DTC_FLAGS="-b 0 -@" /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/sysroots/x86_64-petalinux-linux/usr/bin/lopper -O /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs -f --enhanced   /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/hw-description/system-top.dts /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/components/plnx_workspace/device-tree/xlnx-zynq-zc702-cortexa9-fsbl.dts -- gen_domain_dts ps7_cortexa9_0
+2026-05-25 23:33:05,380 - [DEBUG] 
+
+
+
+2026-05-25 23:33:05,380 - [DEBUG] LOPPER_DTC_FLAGS="-b 0 -@" /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/sysroots/x86_64-petalinux-linux/usr/bin/lopper -O /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs -f                  "/home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/hw-description/system-top.dts" -- baremetaldrvlist_xlnx ps7_cortexa9_0 "/home/bbzorba/Desktop/Embedded_Systems/PetaLinux/sysroots/x86_64-petalinux-linux/usr/share/embeddedsw"
+2026-05-25 23:33:06,619 - [DEBUG] 
+
+
+
+2026-05-25 23:33:06,620 - [INFO] Adding user layers
+2026-05-25 23:33:06,620 - [DEBUG] Shutting down bitbake
+2026-05-25 23:33:06,620 - [DEBUG] Adding layer: /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/meta-user
+2026-05-25 23:33:06,620 - [DEBUG] bitbake-layers -F add-layer /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/meta-user
+2026-05-25 23:33:08,103 - [DEBUG] 
+NOTE: Starting bitbake server...
+WARNING: The zynq-generic machine is intended to be included by other machines, it should not be used by itself.  For a non-machine, SoC specific filesystem, please use one of the common machines defined in meta-xilinx-core.
+NOTE: Started PRServer with DBfile: /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/build/cache/prserv.sqlite3, Address: 127.0.0.1:40661, PID: 169602
+
+
+
+2026-05-25 23:33:08,110 - [INFO] Generating machine conf file
+2026-05-25 23:33:08,116 - [INFO] Generating plnxtool conf file
+2026-05-25 23:33:08,129 - [DEBUG] python3 /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/components/yocto/layers/meta-xilinx/meta-xilinx-core/gen-machine-conf/gen-machine-scripts/rootfsconfigs/rootfs_config.py --update_cfg /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/configs/rootfs_config /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/build/conf/plnxtool.conf zynq
+2026-05-25 23:33:08,171 - [DEBUG] 
+
+
+
+2026-05-25 23:33:08,173 - [DEBUG] Shutting down bitbake

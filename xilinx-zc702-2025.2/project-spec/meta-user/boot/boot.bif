@@ -1,0 +1,9 @@
+the_ROM_image:
+{
+    [pskfile] /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/meta-user/keys/primary.pem
+    [sskfile] /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/project-spec/meta-user/keys/secondary.pem
+
+    [bootloader, authentication=rsa] /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/images/linux/zynq_fsbl.elf
+    [authentication=rsa] /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/images/linux/system.bit
+    [authentication=rsa] /home/bbzorba/Desktop/Embedded_Systems/PetaLinux/xilinx-zc702-2025.2/images/linux/u-boot_mod.elf
+}

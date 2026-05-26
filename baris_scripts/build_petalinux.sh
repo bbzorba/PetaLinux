@@ -28,16 +28,10 @@ echo "================================================="
 echo "Cleaning the Build"
 echo "================================================="
 
-petalinux-build -x mrproper
+# petalinux-build -x mrproper
 
 echo "================================================="
 echo "Building PetaLinux"
 echo "================================================="
 
 petalinux-build
-
-echo "================================================="
-echo "Launching QEMU"
-echo "================================================="
-
-petalinux-boot qemu --kernel
